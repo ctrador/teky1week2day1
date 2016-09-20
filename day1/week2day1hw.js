@@ -8,7 +8,8 @@ $(function() {
          
           $('.buttons').click(function(){
             var myValue = $(this).html();
-            alert(myValue); 
+            show(myValue)
+            $('ol').append('myValue'); 
        
        
      });  
