@@ -1,0 +1,17 @@
+h2 {
+    color: blue;
+}
+
+button {
+    font-weight: bold;
+}
+
+button.remove {
+    color: red;
+    font-size: -50%;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}

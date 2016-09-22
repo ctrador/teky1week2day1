@@ -1,0 +1,63 @@
+                    pics
+
+http://wallpapercave.com/wp/r4knrxr.jpg
+
+src="http://wallpapercave.com/wp/r4knrxr.jpg
+
+<img src="http://images5.fanpop.com/image/photos/30900000/supercell-weather-30965292-1440-900.jpg"></img>
+
+<img src="http://addons.kodi.tv/addon-data/eden/skin.transparency/backgrounds/home-weather-conditional/4/weather-04.jpg"></img>
+
+<img src="http://www.wallpaperscharlie.com/wp-content/uploads/2016/07/Snowy-Weather-HD-Images-6.jpg"></img>
+              
+<img  src="http://images.fanpop.com/images/image_uploads/severe-weather-weather-250420_1024_768.jpg"></img>
+
+<img  src="http://www.spyderonlines.com/images/wallpapers/weather-wallpaper/weather-wallpaper-25.jpg"></img>
+
+<img  src="https://www.vent.at/urlaub/images/ORTE/WI/vent/winter/skigebiet_landschaft/vent_wintersportbericht_background,method=crop,prop=data,id=1636-900.jpg"></img>
+               
+               Tasks and Requirements
+
+Your page should be able to display the following information for more than one location using cards.
+Current Temperature
+City, State
+Max Temp for the day
+Min Temp for the day
+Rain % for the day
+You must take advantage of the Bootstrap's grid layout for your cards.
+You should implement a navigation bar that uses Bootstrap.
+Bonus
+Use Bootstrap's glpyhicons to create a + button for users to, eventually, add additional locations.
+Use stock images to display the current weather for a location as the background to the card. If it's sunny, have the be a picture of a clear day. You might need an overlay on the image to make the information readable!
+Wednesday
+
+Making it work! Using the Google Geocoding API and the Dark Sky API we should be able to allow a user to input a zip code and get the current weather data.
+
+You will need to an API key for both services.
+
+Google Geocoding API Key
+
+Click on "Get A Key"
+Select "Create a new Project"
+Enter a new project name
+Click "Create and Enable API"
+Your API key is in the grey box.
+Dark Sky API
+
+Click "Sign Up"
+Register and confirm your email.
+Log in
+Your API key is the "Secret Key"
+WARNING - You must use dataType: jsonp in your AJAX request or you will get a cross-origin request error.
+
+Tasks and Requirements
+
+Allow users to input a zipcode.
+Access the Google Geocoding API to convert a zip code into latitude and longitude.
+Access the Dark Sky API to get current weather information.
+Add and remove weather cards using AJAX.
+Bonus
+Allow users to input zipcodes, addresses, cities, and other valid forms of location.
+Allow users to click on the card to display weekly weather data instead of current.
+Create a card flipping animation.
+Contact GitHub API Training Shop Blog About

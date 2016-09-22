@@ -1,0 +1,15 @@
+google maps api key
+AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY
+api url:
+https://maps.googleapis.com/maps/api/geocode/json?address=1600+Amphitheatre+Parkway,+Mountain+View,+CA&key=AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY
+
+
+Dark Sky weather API:
+
+4c56466ac874b73c5e175c9928813bbb
+ 
+ url:
+
+ https://api.darksky.net/forecast/4c56466ac874b73c5e175c9928813bbb/37.8267,-122.4233
+
+ postman id: 57e2c0671ebec60100061853
