@@ -19,7 +19,7 @@ $("ul").append("<li>Item 2</li>");
 $(".remove").click(function(ev){
     console.log(ev);
     $(ev.target.parent()
-    .fadeOut(); //remove();
+    .fadeOut()//remove();
 
 
 

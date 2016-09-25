@@ -6,7 +6,7 @@ $(function() {
     $("body")
     .css("text-align", "center")
          
-          $('.buttons').click(function(){
+          $('.buttons').click(function(ev){
             var myValue = $(this).html();
             show(myValue)
             $('ol').append('myValue'); 
@@ -14,4 +14,7 @@ $(function() {
        
      });  
  });
-    
+    // $(document).ready(function(){
+
+        
+    }

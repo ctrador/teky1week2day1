@@ -1,41 +1,47 @@
-.blue{
-    background-color: blue;
+.card1 {
+
+background-image: url("http://wallpapercave.com/wp/r4knrxr.jpg")
+
 }
 
-.red{
-    background-color: red;
-}
+.card2 {
 
-.yellow{
-    background-color: black;
-}
-
-.green{
-  background-color: green;
-}
-
-.monday{
-background-image: url("http://cdn.weatheravenue.com/img/background/background.jpg");
-background-repeat: no-repeat;
-}
+background-image: url("http://images5.fanpop.com/image/photos/30900000/supercell-weather-30965292-1440-900.jpg")
 
 
-.tuesday{
-    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
 }
 
-.wenesday{
-    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+.card3 {
+
+background-image: url("http://addons.kodi.tv/addon-data/eden/skin.transparency/backgrounds/home-weather-conditional/4/weather-04.jpg");
+
+height:400px;
+    width: 250px;
+    margin:10px;
+
+
 }
 
-.thursday{
-    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+.card4{
+
+background-image: url("http://images5.fanpop.com/image/photos/30900000/supercell-weather-30965292-1440-900.jpg");
+
+
 }
 
-.friday{
-    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+.card5{
+
+background-image: url("http://wallpapercave.com/wp/r4knrxr.jpg");
+
+
 }
 
-.saturday{
-http://cdn.weatheravenue.com/img/background/background.jpg
+.card6{
+
+background-image: url("http://wallpapercave.com/wp/r4knrxr.jpg
+");
+
+
+
 }
+

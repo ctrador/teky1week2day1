@@ -1,3 +1,11 @@
+
+Google map end
+$("#city state").append(data.locality + "  " + "," + "  " + data.political);
+
+
+
+
+
                     pics
 
 http://wallpapercave.com/wp/r4knrxr.jpg
@@ -61,3 +69,72 @@ Allow users to input zipcodes, addresses, cities, and other valid forms of locat
 Allow users to click on the card to display weekly weather data instead of current.
 Create a card flipping animation.
 Contact GitHub API Training Shop Blog About
+css
+
+blue{
+    background-color: blue;
+
+}
+
+.red{
+    background-color: red;
+}
+
+.black{
+    background-color: coral;
+}
+
+.green{
+  background-color: green;
+  ;
+}
+
+.monday{
+
+background-image:  url "http://cdn.weatheravenue.com/img/background/background.jpg";
+}
+
+
+
+
+}
+.card1{
+    border-radius: 25px;
+    background: #73AD21;
+    padding: 20px; 
+    width: 200px;
+    height: 150px; 
+}
+.card2{
+    border-bottom-left-radius: 25px;
+    background-image: 
+}
+
+
+.tuesday{
+    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+}
+
+.wenesday{
+    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+}
+
+.thursday{
+    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+}
+
+.friday{
+    background-image: http://cdn.weatheravenue.com/img/background/background.jpg
+}
+
+.saturday{
+http://cdn.weatheravenue.com/img/background/background.jpg
+}
+
+$(function() {
+$.ajax("http://rest.learncode.academy/api/learncode/friends/57e2c0671ebec60100061853") .done(function(data){
+$("#me").append(data.name + "  "+ "likes" + "  " + data.drink);
+});
+
+
+});
