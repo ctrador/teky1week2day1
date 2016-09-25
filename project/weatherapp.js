@@ -5,8 +5,8 @@ $(function() {
       // ***************************
 
       function lookupLatLong_Complete(result) {
-          var latitude = result.results["0"].geometry.location.lat;
-          var longitude = result.results["0"].geometry.location.lng;
+          var latitude = result.results[0].geometry.location.lat;
+          var longitude = result.results[0].geometry.location.lng;
           var local = latitude + "," + longitude;
           
           console.log("The lat and long is " + latitude + ", " + longitude);
@@ -96,40 +96,75 @@ var currentTemp = function(id){
 };
 });
 
-var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
-   $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
-            var div = $("<div></div>");
-            div.append(data.currently.temperature);
-            console.log(data.currently.temperature);
-            $("#currentTemp").append(div);
-        });
         //temp
    var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
    $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
             var div = $("<div></div>");
-            div.append(data.currently.temperature);
+            div.append(data.currently.temperature)
+            div.append( " _ "+ " _ ")
+            .append("F" + " is the Current Temp");
+            div.append( " _ "+ " ")
             console.log(data.currently.temperature);
+            div.append( " "+ " ")
             $("#currentTemp").append(div);
+            div.append( " _ "+ " _")
+             div.append(data.daily.data[0].temperatureMax)
+             .append("F"+"     is   Todays    High");
+             div.append( " _ "+ " _ ")
+            console.log(data.daily.data[0].temperatureMax);
+            $("#todaysHigh").append(div);
+            div.append(data.daily.data[0].temperatureMin)
+            .append("this is Todays Low Temp")
+            div.append( " _ "+ " _ ")
+            console.log(data.daily.data[0].temperatureMin);
+            div.append( "  "+ " ")
+            $("#todaysLow").append(div)
+            div.append( " "+ "  ")
+             div.append(data.daily.data[0].precipProbability)
+             .append(" % Chance of Rain today")
+            console.log(data.daily.data[0].precipProbability);
+            $("#ChanceOfRain").append(div);  
+
+        });//https://maps.googleapis.com/maps/api/geocode/json?address=+paintsville,+ky&key=AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY
+   //  var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?address="
+//var googleApiKey = "AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY"
+
+   //$.ajax(googleUrl+address++googleApiKey, { dataType: "json"}).done(function(data) {   
+   //         var div = $("<div></div>");
+        /*    div.append(data.results[0].address_components[2].long_name);
+            console.log(data.results[0].address_components[2].long_name)
+            $("#cityState").append(div);
+            div.append(data.results["0"].address_components[4].short_name)
+            console.log(data.results["0"].address_components[4].short_name)
+            $("#cityState").append(div)
         });
+   
+
         //todays high
    
-   var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
+  /* var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
    $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
             var div = $("<div></div>");
             div.append(data.daily.data[0].temperatureMax);
             console.log(data.daily.data[0].temperatureMax);
             $("#todaysHigh").append(div);
-        });
+        
    
-   var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
+    
    $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
             var div = $("<div></div>");
-            div.append(data.daily.data[0].temperatureMin);
+            div.append(data.daily.data[0].temperatureMin)
+            .append("this is Todays Low ")
             console.log(data.daily.data[0].temperatureMin);
-            $("#todaysLow").append(div);
+            $("#todaysLow").append(div)
+             div.append(data.daily.data[0].precipProbability)
+             .append("Chance of Rain today")
+            console.log(data.daily.data[0].precipProbability);
+            $("#ChanceOfRain").append(div);  
+
         });
 
-var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
+/*var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
    $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
             var div = $("<div></div>");
             div.append(data.daily.data[0].precipProbability);
@@ -150,8 +185,7 @@ var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";
 
   });
 
-});
-
+*/
 var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
 
  /*  $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType:"jsonp"}).done(function(data) {
@@ -164,17 +198,19 @@ var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";
  var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?"
 var googleApiKey = "AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY"
 
-var longlat = function(logatude, latatuide){ $.ajax(googleApiUrl + "address=" + "41222" + "&key=" + googleApiKey).done(function (data) {
+var longlat = function(logatude, latatuide){ $.ajax(googleApiUrl + "address=" + "41222" + "&key=" + googleApiKey).done(function (data) {var div= $("<div></div>"); 
 
-   console.log(data);
-    var div = $("<div></div>");
-    div.append(data.name);
-        .append(data.drink)                 postal_code
-    $("#cityState")
-
+  
+    div.append(data.results[0].address_components[2].long_name);
+    console.log(data.results[0].address_components[2].long_name);
+     div.append(data.results[0].address_components[4].short_name);
+     console.log(data.results[0].address_components[4].short_name);              
+    $("#cityState").append(div);
+});
+/*
                 darksky path   
    current temp path=  .currently.temperature
-
+// postal_code
    todays high = .daily.data["0"].temperatureMax
 
    todays loe = .daily.data["0"].temperatureMin
@@ -186,7 +222,8 @@ var longlat = function(logatude, latatuide){ $.ajax(googleApiUrl + "address=" + 
     lat .results["0"].geometry.location.lat
 
     lon .results["0"].geometry.location.lng
-    
+    city =.results["0"].address_components[2].long_name
+    state = data.results["0"].address_components[4].short_name)
      */
 
 
