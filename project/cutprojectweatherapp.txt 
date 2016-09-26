@@ -1,0 +1,120 @@
+
+ /*  $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType:"jsonp"}).done(function(data) {
+      console.log(data);
+
+   });
+   
+});hear up working api code
+
+ var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?"
+var googleApiKey = "AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY"
+
+var longlat = function(logatude, latatuide){ $.ajax(googleApiUrl + "address=" + "41222" + "&key=" + googleApiKey).done(function (data) {var div= $("<div></div>"); 
+
+  
+    div.append(data.results[0].address_components[2].long_name);
+    console.log(data.results[0].address_components[2].long_name);
+     div.append(data.results[0].address_components[4].short_name);
+     console.log(data.results[0].address_components[4].short_name);              
+    $("#cityState").append(div);
+});
+/*
+                darksky path   
+   current temp path=  .currently.temperature
+// postal_code
+   todays high = .daily.data["0"].temperatureMax
+
+   todays loe = .daily.data["0"].temperatureMin
+
+   chance of rain = .daily.data["0"].precipProbability
+
+    google api path
+
+    lat .results["0"].geometry.location.lat
+
+    lon .results["0"].geometry.location.lng
+    city =.results["0"].address_components[2].long_name
+    state = data.results["0"].address_components[4].short_name)
+     */
+
+
+
+
+
+
+
+   
+
+
+
+
+
+//  var googleid = key=AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY
+
+  //   var getlatitudelongitude = function(id) {
+    //    $.ajax("https://maps.googleapis.com/maps/api/geocode/json?" + "#city" + "," + "#state" + googleid).done(function(data) {
+      //      var div = $("<div></div>");
+        //    div.append(data.name)
+          //     .append(data.drink);
+ //           $("#friend").append(div);        
+        //https://maps.googleapis.com/maps/api/geocode/json?address=+paintsville,+ky&key=AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY
+   //  var googleApiUrl = "https://maps.googleapis.com/maps/api/geocode/json?address="
+//var googleApiKey = "AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY"
+
+   //$.ajax(googleUrl+address++googleApiKey, { dataType: "json"}).done(function(data) {   
+   //         var div = $("<div></div>");
+        /*    div.append(data.results[0].address_components[2].long_name);
+            console.log(data.results[0].address_components[2].long_name)
+            $("#cityState").append(div);
+            div.append(data.results["0"].address_components[4].short_name)
+            console.log(data.results["0"].address_components[4].short_name)
+            $("#cityState").append(div)
+        });
+   
+
+        //todays high
+   
+  /* var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
+   $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
+            var div = $("<div></div>");
+            div.append(data.daily.data[0].temperatureMax);
+            console.log(data.daily.data[0].temperatureMax);
+            $("#todaysHigh").append(div);
+        
+   
+    
+   $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
+            var div = $("<div></div>");
+            div.append(data.daily.data[0].temperatureMin)
+            .append("this is Todays Low ")
+            console.log(data.daily.data[0].temperatureMin);
+            $("#todaysLow").append(div)
+             div.append(data.daily.data[0].precipProbability)
+             .append("Chance of Rain today")
+            console.log(data.daily.data[0].precipProbability);
+            $("#ChanceOfRain").append(div);  
+
+        });
+
+/*var darkSkyKey = "4c56466ac874b73c5e175c9928813bbb";  
+   $.ajax("https://api.darksky.net/forecast/" + darkSkyKey + "/37.8267,-122.4233", { dataType: "jsonp"}).done(function(data) {   
+            var div = $("<div></div>");
+            div.append(data.daily.data[0].precipProbability);
+            console.log(data.daily.data[0].precipProbability);
+            $("#ChanceOfRain").append(div);        
+   
+   });
+   
+    
+    
+
+
+//dericks api code up from hear
+/*$(document).ready(function () {
+
+  $.ajax("https://maps.googleapis.com/maps/api/geocode/json?address=612+Euclid+Ave+Paintsvill,+KY&key=AIzaSyDfKPGIacJeWwwN52UYn_8hWzr-K_YO9yY").done(function (data) {
+      console.log(data); 
+
+  });
+
+*/
